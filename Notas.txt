@@ -1,0 +1,18 @@
+GULP Y SASS
+
+1. Se crea y diligencia el archivo package.json con: npm init
+2. Se crea el archivo: gulpfile.js el cual contiene toda la configuración que requerimos
+3. instalamos gulp: npm install --save-dev gulp (Asi requerimos gulp solo en desarrollo, no para producción)
+    - con esto se crea la carpeta de node_modules con todas las dependencias de node.js y el archivo
+    package-lock.json el cual nunca se debe modificar (por eso tiene -lock)
+
+4. instalamos para compilar SASS : npm install --save-dev gulp-sass
+    Nota: se debe instalar previamente en global gulp cli.  npm i gulp cli.
+5. En gulpjs.com se encuentran todos los plugins que se necesitan para cada tipo de proyecto
+    Nota: Se usa : REQUIRE para importar dependencias de la carpeta node_modules
+                 : EXPORTS para exportar y hacer disponible nustro codigo de forma externa.
+
+6. Se abre el archivo de gulp y ahora se pone la funcionalidad requeriendo primero gulp
+const { series } = require('gulp');
+
+{series} lo que hace es ejecutar varias funciones al mismo tiempo en serie
