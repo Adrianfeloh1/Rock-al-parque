@@ -308,9 +308,6 @@ template {
   display: none;
 }
 
-/* ---------------------------HTML------------------------------ */
-
-
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -326,7 +323,7 @@ body {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(#050517);
 }
 
@@ -349,15 +346,15 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 .header {
@@ -365,21 +362,33 @@ h3 {
 }
 .header .contenido-header {
   padding: 2.5rem 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+}
+@media (min-width: 480px) {
+  .header .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .header h1 {
   color: #FFFFFF;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+@media (min-width: 480px) {
+  .header h1 {
+    margin-bottom: 0;
+  }
 }
 
 .navegacion-principal {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
+  justify-content: center;
 }
 .navegacion-principal a {
   color: #FFFFFF;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 .navegacion-principal a:hover {
   font-weight: 700;

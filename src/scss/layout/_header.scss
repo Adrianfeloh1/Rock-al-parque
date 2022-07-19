@@ -2,25 +2,36 @@
     background-color: $rojo; 
     
     .contenido-header {
-        padding: $separacion / 2 0;
-        display: flex; 
-        justify-content: space-around;   
-        align-items: center;  
+        padding: $separacion / 2 0;        
+        
+        @include telefono {
+            display: flex; 
+            justify-content: space-between;   
+            align-items: center; 
+        }
+         
     }
 
     h1 {
        color: $blanco;
+       margin-bottom: 1rem;
+       text-align: center;
+       @include telefono {
+        margin-bottom: 0;
+       }
+      
        
     }    
 }
 
 .navegacion-principal {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
+    justify-content: center;
     
     a {
         color: $blanco;
-        font-size: 2.2rem;
+        font-size: 2rem;
         &:hover {            
             font-weight: $bold;        
         }

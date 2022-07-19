@@ -16,3 +16,11 @@ GULP Y SASS
 const { series } = require('gulp');
 
 {series} lo que hace es ejecutar varias funciones al mismo tiempo en serie
+
+7. la ventaja de gulp es la automatización de las tareas en el archivo de gulpfile.js
+
+8. Un mixin es exclusivo de sass para darle dinamismo creando bloques de codigo para reutilizar
+siguen las mismas reglas de JS
+@nombreDeMixin {
+    ATRIBUTOS CSS
+}
