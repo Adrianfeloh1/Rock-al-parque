@@ -14,15 +14,37 @@
 
     <header class="header">
         <div class="contenedor contenido-header">
-            <h1> Festival Rock Al Parque</h1>
+            <h1>Rock al Parque</h1>
 
             <nav class="navegacion-principal">
+                <a href="#"><img src="./src/img/logo-colombia-al-parque.png" alt="colombia"></a>
+                <a href="#"><img src="./src/img/logo-hip-hop.png" alt="hip hop"></a>
+                <a href="#"><img src="./src/img/logo-jazz.png" alt="jazz"></a>
                 <a href="#">LineUp</a>
                 <a href="#">Galeria</a>
                 <a href="#">Boletas</a>
             </nav>
         </div>
     </header>
+
+    <div class="video">
+        <div class="overlay"> <!-- algo que crubre al elemento -->            
+            <div class="logo-rock">
+                <img src="./src/img/logo-rock.png" alt="logo">
+            </div>
+            <div class="contenedor contenido-video">
+
+                <h2>Rock al Parque
+                    <span>29 y 30 de octubre, Medellín, Colombia </span>
+                </h2>
+            </div>
+        </div>
+        <video controls autoplay muted loop>
+            <source src="video/rock-band.mp4" type="video/mp4"> <!-- EN CASO QUE NO SOPORTE -->
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+    </div>
 
 </body>
 

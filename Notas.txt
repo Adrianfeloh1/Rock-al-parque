@@ -24,3 +24,19 @@ siguen las mismas reglas de JS
 @nombreDeMixin {
     ATRIBUTOS CSS
 }
+
+Nota: La etiqueta video contiene los atributos: 
+    - controls para reproducir el video por click.
+    - autoplay para que inicie solo.
+    - muted reproduce el video sin sonido. (esto es requerimiento de CHROME)
+    - loop hace que se auto reproduzca solo siempre.
+
+    Se definen varios tipos de video, en caso que el navegador no lo reproduzca.
+
+        <video controls autoplay muted loop>
+            <source src="video/rock-band.mp4" type="video/mp4"> <!-- EN CASO QUE NO SOPORTE -->
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+
+
