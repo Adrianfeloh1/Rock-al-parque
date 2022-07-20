@@ -1,0 +1,38 @@
+.sobre-festival {
+    padding: $separacion 0;
+
+    @include tablet {
+        /* MIXIN */
+        @include grid (2, $separacion);
+
+        /* ESTO SERIA SIN EL MIXIN */
+        /* display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: $separacion; */
+    }
+}
+
+.contenido-festival {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    h2 {
+        font-size: 3.5rem;
+        color: $verde;
+        
+    }
+
+    .fecha{
+        color: $naranja;
+        font-weight: $bold;
+    }
+
+    .texto{
+        color: $blanco;
+        text-align: justify;
+        line-height: 1.3;
+    }
+}

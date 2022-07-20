@@ -433,28 +433,73 @@ h3 {
 .logo-rock img {
   border-radius: 50%;
   margin-top: 3rem;
+  max-width: 12rem;
 }
 
 .contenido-video {
-  margin-top: -8rem;
+  margin-top: -13rem;
   display: flex;
   align-items: center;
   height: 100%; /* PARA TOMAR TODA LA ALTURA DEL VIDEO, NO DE LAS LETRAS */
 }
-.contenido-video h2 {
+
+.h2-video {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   color: #DCDDDB;
-  font-size: 8rem;
+  font-size: 6rem;
+  color: transparent;
   /* PARA PONER EL TEXTO ENCIMA DEL VIDEO */
   position: relative;
   z-index: 1; /* SI PONES -1 QUEDA DETRAS DEL VIDEO */
 }
-.contenido-video h2 span {
+.h2-video span {
   color: #1D1C21;
-  font-size: 2rem;
+  font-size: 1.8rem;
   background-color: #CFFF68;
   padding: 1rem 2rem;
   border-radius: 1rem;
+  align-self: center;
+}
+
+@media (min-width: 480px) {
+  .h2-video {
+    color: #DCDDDB;
+  }
+}
+.sobre-festival {
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .sobre-festival {
+    /* MIXIN */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    /* ESTO SERIA SIN EL MIXIN */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: $separacion; */
+  }
+}
+
+.contenido-festival {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenido-festival h2 {
+  font-size: 3.5rem;
+  color: #CFFF68;
+}
+.contenido-festival .fecha {
+  color: #fa7c06;
+  font-weight: 700;
+}
+.contenido-festival .texto {
+  color: #DCDDDB;
+  text-align: justify;
+  line-height: 1.3;
 }

@@ -53,23 +53,27 @@
     img {
         border-radius: 50%;
         margin-top: 3rem;
+        max-width: 12rem;        
     }
     
 }
 
 .contenido-video {
-    margin-top: -8rem;
+    margin-top: -13rem;
     display: flex;
     align-items: center;
-    height: 100%; /* PARA TOMAR TODA LA ALTURA DEL VIDEO, NO DE LAS LETRAS */
+    height: 100%; /* PARA TOMAR TODA LA ALTURA DEL VIDEO, NO DE LAS LETRAS */   
+    
+  }
+    
 
-
-    h2 {
+    .h2-video {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         color: $blanco;
-        font-size: 8rem;
+        font-size: 6rem;      
+        color:transparent;  
 
         /* PARA PONER EL TEXTO ENCIMA DEL VIDEO */
         position: relative;
@@ -77,11 +81,17 @@
 
         span {   
             color: $negro;         
-            font-size: 2rem;
+            font-size: 1.8rem;
             background-color: $verde;
             padding: 1rem 2rem;
             border-radius: 1rem;
-
+            align-self: center;
         }
     }
-}
+
+    @include telefono {
+      .h2-video {
+      color:$blanco
+     }
+    }
+    
