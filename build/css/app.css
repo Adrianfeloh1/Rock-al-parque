@@ -358,6 +358,14 @@ h3 {
   font-size: 2.6rem;
 }
 
+.bg-verde {
+  background-color: #CFFF68;
+}
+
+.bg-naranja {
+  background-color: #fa7c06;
+}
+
 .header {
   background-color: #DCDDDB;
 }
@@ -502,4 +510,50 @@ h3 {
   color: #DCDDDB;
   text-align: justify;
   line-height: 1.3;
+}
+
+.lineup {
+  padding: 5rem 0;
+}
+.lineup h3, .lineup p {
+  text-align: center;
+  color: #DCDDDB;
+}
+.lineup .dia {
+  text-transform: uppercase;
+  margin: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.escenarios-contenedor .escenario {
+  padding-top: 2.5rem;
+}
+.escenarios-contenedor .nombre-escenario {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.escenarios-contenedor .nombre-escenario:after {
+  /* ESTO ES PARA LOS ICONOS, YA QUE SON PSEUDO ELEMENTOS */
+  content: "";
+  width: 20rem;
+  height: 10rem;
+  display: block;
+  margin: 2rem auto 0 auto;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.edm .nombre-escenario:after {
+  background-image: url(../img/icono_edm.png);
+}
+
+.rock .nombre-escenario:after {
+  background-image: url(../img/icono_rock.png);
 }
