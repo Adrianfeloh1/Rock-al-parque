@@ -11,6 +11,10 @@ body {
     font-family: $fuentePrincipal;
     font-size: 1.6rem;
     background-color: $negro;
+
+    &.fijar-body{
+        overflow: hidden; // para fijar y no poder dar scroll
+    }
 }
 
 p {
