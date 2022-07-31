@@ -1,0 +1,23 @@
+.boletas {
+    padding: $separacion 0;
+    
+    h3{
+        text-align: center;
+        color: $negro;
+    }
+
+    .contenedor-boletas{
+        margin-top: $separacion / 2;
+        @include grid (2, $separacion)
+    }
+
+    .plan {
+        color: $negro;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+
+    }
+
+
+}

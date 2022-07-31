@@ -648,3 +648,23 @@ h3 {
   border-radius: 50%;
   cursor: pointer;
 }
+
+.boletas {
+  padding: 5rem 0;
+}
+.boletas h3 {
+  text-align: center;
+  color: #1D1C21;
+}
+.boletas .contenedor-boletas {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+.boletas .plan {
+  color: #1D1C21;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
