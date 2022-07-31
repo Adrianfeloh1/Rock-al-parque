@@ -1,14 +1,14 @@
 .header {
     background-color: $blanco; 
-    
-    
+   
+        
     .contenido-header {
-        padding: $separacion / 2 0;        
+         
         
         @include telefono {
             display: flex; 
             justify-content: space-between;   
-            align-items: center; 
+            align-items: center;             
         }
          
     }
@@ -19,10 +19,27 @@
        text-align: center;
        @include telefono {
         margin-bottom: 0;
-       }
-      
+       }      
+    }   
+
+    .logo-medellin {
        
-    }    
+        margin-bottom: -0.5rem;
+        align-items: center;
+        padding-top: 1rem;
+        @include telefono {
+            padding-top: 0;
+           }      
+    }
+
+    .logo-medellin img {
+        display: none;     
+        width: 50%;    
+        @include telefono {
+            display: block;
+           }      
+        
+    }
 }
 
 .navegacion-principal {

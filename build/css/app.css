@@ -369,9 +369,6 @@ h3 {
 .header {
   background-color: #DCDDDB;
 }
-.header .contenido-header {
-  padding: 2.5rem 0;
-}
 @media (min-width: 480px) {
   .header .contenido-header {
     display: flex;
@@ -387,6 +384,25 @@ h3 {
 @media (min-width: 480px) {
   .header h1 {
     margin-bottom: 0;
+  }
+}
+.header .logo-medellin {
+  margin-bottom: -0.5rem;
+  align-items: center;
+  padding-top: 1rem;
+}
+@media (min-width: 480px) {
+  .header .logo-medellin {
+    padding-top: 0;
+  }
+}
+.header .logo-medellin img {
+  display: none;
+  width: 50%;
+}
+@media (min-width: 480px) {
+  .header .logo-medellin img {
+    display: block;
   }
 }
 
@@ -518,9 +534,9 @@ h3 {
 .lineup h3, .lineup p {
   text-align: center;
   color: #DCDDDB;
+  font-size: 3rem;
 }
 .lineup .dia {
-  text-transform: uppercase;
   margin: 5rem 0;
 }
 
@@ -535,8 +551,9 @@ h3 {
   padding-top: 2.5rem;
 }
 .escenarios-contenedor .nombre-escenario {
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1D1C21;
 }
 .escenarios-contenedor .nombre-escenario:after {
   /* ESTO ES PARA LOS ICONOS, YA QUE SON PSEUDO ELEMENTOS */
@@ -556,4 +573,21 @@ h3 {
 
 .rock .nombre-escenario:after {
   background-image: url(../img/icono_rock.png);
+}
+
+.calendario {
+  padding: 0;
+  list-style: none;
+}
+.calendario li {
+  padding: 1.6666666667rem;
+  font-weight: 700;
+}
+
+.bg-verde .calendario li:nth-child(odd) {
+  background-color: #bfff35;
+}
+
+.bg-naranja .calendario li:nth-child(odd) {
+  background-color: #ec7505;
 }

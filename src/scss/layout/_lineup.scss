@@ -4,10 +4,12 @@
     h3, p {
         text-align: center;
         color: $blanco;
+        font-size: 3rem;
+        
     }
 
     .dia {
-        text-transform: uppercase;
+      
         margin:$separacion 0;
     }
 
@@ -20,11 +22,14 @@
 
     .escenario {
         padding-top: $separacion / 2;
+        
    }
 
     .nombre-escenario {
-        font-size: 2rem;
-        font-weight: $delgada;
+        font-size: 3rem;
+        font-weight: $bold;
+        color: $negro;
+
 
         &:after{
             /* ESTO ES PARA LOS ICONOS, YA QUE SON PSEUDO ELEMENTOS */
@@ -51,3 +56,22 @@
         background-image: url(../img/icono_rock.png);
     }
 }
+
+.calendario {
+    padding: 0;
+    list-style: none;
+
+    li{
+        padding: $separacion / 3;
+        font-weight: $bold;
+    }
+}
+
+.bg-verde .calendario li:nth-child(odd) {
+    background-color: darken($verde, 10);
+}
+
+.bg-naranja .calendario li:nth-child(odd) {
+    background-color: darken($naranja, 3);
+}
+
