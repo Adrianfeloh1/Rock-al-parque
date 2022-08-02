@@ -601,6 +601,9 @@ h3 {
 }
 .galeria h3 {
   text-align: center;
+  color: #DCDDDB;
+  font-size: 3.5rem;
+  font-weight: 300;
 }
 
 .galeria-imagenes {
@@ -655,6 +658,7 @@ h3 {
 .boletas h3 {
   text-align: center;
   color: #1D1C21;
+  font-size: 3.5rem;
 }
 .boletas .contenedor-boletas {
   margin-top: 2.5rem;
@@ -667,4 +671,49 @@ h3 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 2rem;
+}
+.boletas .plan p {
+  font-size: 3rem;
+}
+
+.pase {
+  width: 100%;
+  border-spacing: 0;
+}
+.pase thead {
+  background-color: #1D1C21;
+  color: #DCDDDB;
+}
+.pase thead th {
+  padding: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.pase tbody {
+  background-color: #fa7c06;
+}
+.pase tbody td {
+  padding: 1.25rem;
+  border-bottom: 1px solid #1D1C21;
+  text-align: left;
+}
+.pase tfoot {
+  background-color: #1D1C21;
+  color: #DCDDDB;
+}
+.pase tfoot td {
+  padding: 1.25rem;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.footer {
+  background-color: #1D1C21;
+  padding: 1.25rem;
+  text-align: center;
+}
+.footer p {
+  color: #DCDDDB;
+  margin: 0;
 }
