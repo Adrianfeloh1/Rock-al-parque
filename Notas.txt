@@ -85,3 +85,10 @@ function crearGaleria (){
         galeria.appendChild(lista);
     }
 }
+
+archivos y carpetas necesarias para hacer el deployment en Netlify 
+
+-build
+-index
+-video
+

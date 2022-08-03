@@ -1,6 +1,32 @@
 document.addEventListener("DOMContentLoaded", function (){
-    scrollNav()
-})
+    scrollNav();
+
+    navegacionFija();
+});
+
+function navegacionFija() {
+
+    //PASO 2 
+    const barra = document.querySelector(".header");
+
+    //Registrar el intersection observer
+    //entries nos da la infomación del elemento a observar
+    //Estamos usando la API de intersectionObserver y le pasamos entries
+    const observer = new IntersectionObserver(function(entries){
+        //console.log(entries[0]); //para verificar cuando deja de ser visible intersecting en la consola
+        if (entries[0].isIntersecting === true) {
+            //console.log("Elemento visible");
+            barra.classList.remove("fijo"); // para quitar en la consola en el html
+        } else {
+            //console.log("Ya desapareció");
+            barra.classList.add("fijo");// para agregar en la consola en el html
+        }  //PASO 2
+    })
+    // Elemento a observar 
+    // La API intersectionObserver tiene el metodo observe y tomamos el elemento a observar .sobre-festival
+
+    observer.observe(document.querySelector(".sobre-festival"));
+}
 
 function scrollNav() {
     const enlaces = document.querySelectorAll (".navegacion-principal a");

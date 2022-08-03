@@ -324,7 +324,7 @@ body {
   background-color: #1D1C21;
 }
 body.fijar-body {
-  overflow: hidden;
+  overflow: visible;
 }
 
 p {
@@ -390,7 +390,13 @@ h3 {
     margin-bottom: 0;
   }
 }
+.header.fijo {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0.3rem 0.4rem #1D1C21;
+}
 .header .logo-medellin {
+  height: 10.2rem;
   margin-bottom: -0.5rem;
   align-items: center;
   padding-top: 1rem;

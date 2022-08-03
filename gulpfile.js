@@ -42,7 +42,7 @@ function versionWebp(){
   
 
 function watchArchivos() {
-    watch ("src/scss/**/*.scss", css); // * es igual a la carpeta actual
+    watch ("src/scss/**/*.scss", css); //es igual a la carpeta actual
     watch ("src/js/**/*.js", javascript);
     // LA SINTAXIS **/* RECORRE TODAS LAS CARPETAS QUE HAY ADENTRO SCSS
 }
